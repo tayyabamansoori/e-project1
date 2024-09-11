@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HTML/CSS">
+  <meta name="author" content="Anil">
+  <title></title>
+  <!-- <link rel="stylesheet" href="homestyle.css"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="animate.css" type="text/css">
+
+</head>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+  /* NAVBAR CSS */
+  html{
+    scroll-behavior: smooth;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+body{font-family: 'Akaya Telivigala', cursive !important;}
+  *{margin: 0;padding: 0;box-sizing: border-box;}
+  a{text-decoration: none;}
+  a:hover{text-decoration: none;}
+  li{list-style: none;}
+  p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+  }
+  .extradiv h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+  }
+  i{
+    color: #3A243B;
+  }
+  
+  
+  /* .header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,#836983,#9e7BB3), rgba(0,#836983,#3A243B)), url("assests/slider/back1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+  } */
+  /* .header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    z-index: -1;
+    background: linear-gradient(to right,  #836983,#9e7BB3 0%, #9e7BB3 0%, #3A243B 100%);
+  } */
+  .navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    z-index: -1;
+    background: linear-gradient(to right,  #836983,#9e7BB3 0%, #9e7BB3 0%, #3A243B 100%);
+  }
+  .nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+  }
+  .header-section{
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  .center-div{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .header-buttons a:hover{
+    text-decoration: none;
+    color: #9e7BB3 ;
+    background-color: rgb(250, 21, 21);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  }
+  .center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+  }
+  
+  
+  .header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+  }
+  .extradiv p{text-align: justify;}
+  .extradiv{
+    background-color: #fff;
+    border: none;
+    padding: 30px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  .extradiv:hover{
+    box-shadow: -10px 0px 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+  }
+  /* NAVBAR CSS END */
+
+  /* *********************  footer starts ****************************** */
+  
+  .footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #836983;
+    position: relative;
+  }
+  .footersection p{
+    color: #fff;
+  }
+  .footer-navlinks{
+    text-align: center;
+  }
+  .footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  }
+  #myBtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 10;
+    border: none;
+    color: #fff;
+    background: #3A243B;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #myBtn:hover{
+    background: #606060;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-item{
+      text-align: center!important;
+    }
+  }
+    .footer-navlinks{
+      text-align: left;
+    }
+    .footer-div{
+      margin: 30px 0;
+    }
+
+     /* FOOTER CSS END */
+
+     .a{
+        /* border: 2px solid ; */
+        width: 50%;
+        height: 400px;
+        display: inline-block;
+    }
+    .b{
+        /* border: 2px solid ; */
+        width: 50%;
+        height: 400px;
+        float: right !important;
+       
+    }
+    h1{
+      font-size: 45px;
+      font-weight: bold;
+      
+    }
+    .yyy{
+      background-color: #9e7BB3;
+    }
+    /* .wrapper{
+      height: 120px;
+      min-width: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+.wrapper span{
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.wrapper span.num{
+  font-size: 50px;
+  border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+} */
+</style>
+
+<!-- <script>
+  const plus=document.querySelector(".plus"),
+  min=document.querySelector(".min"),
+  num=document.querySelector(".num");
+
+  let x= 1;
+  plus.addEventListener("click",()=>{
+    x++;
+    x=(x<10) ? "0" + x : x;
+    num.innerText = x;
+    console.log(x)
+  });
+</script> -->
+
+<body>
+
+  <!-- NAVBAR START -->
+
+              
+                <!-- <a class="nav-link dropdown-toggle" href="Products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Product
+                </a> -->
+                <div class="header" id="topheader">
+                  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="height: 100px;">
+                    <div class="container text-uppercase p-2">
+                      <a class="navbar-brand font-weight-bold text-white" href="#"> <img src="assests/p.png" height="80px" width="80px"> MECASIO HAIR EXPERT </a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                              Home
+                            </a>
+                            <div class="dropdown-menu yyy" id="back" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" id="tex" href="#servicediv" style="text-size-adjust:2px ;">Service</a>
+                              <a class="dropdown-item" id="tex" href="#pricingdiv">PRICES</a>
+                              <a class="dropdown-item" id="tex" href="#contactdiv">CONTACT </a>
+                              <a class="dropdown-item" id="tex" href="#footerdiv">ABOUT</a>
+                            </div>
+                          </li>
+                           <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                      </a>
+                      <div class="dropdown-menu yyy" id="back" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" id="tex" href="categories.html#hl">Hair loss</a>
+                        <a class="dropdown-item" id="tex" href="categories.html#G">Graying</a>
+                        <a class="dropdown-item" id="tex" href="categories.html#gr">Growth related</a>
+                        <a class="dropdown-item" id="tex" href="categories.html#pb">premature baldness</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle " href="Products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                      </a>
+                      <ul class="dropdown-menu yyy" style="background-color: #836983;">
+                        <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#sh">Shampoo</a></li>
+                        <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#co">Conditioner</a></li>
+                        <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#hc">Hair Cream</a></li>
+                        <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#hm">Hair Mask</a></li>
+                        <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#hs">Hair Spray</a></li>
+                        <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#s">Hair Serum</a></li> 
+                      </ul>
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="prod_cate.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Equipment
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #836983;">
+                          <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#sh">Drayer</a></li>
+                          <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#co">Straightner</a></li>
+                          <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#hc">Spray bottle</a></li>
+                          <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#hm">Steamers</a></li>
+                          <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#hs">Massager</a></li>
+                          <li><a class="dropdown-item text-danger" style="color: whitesmoke;" href="#s">Spa caps</a></li> 
+                        </ul> -->
+                       
+                         
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="prod_cate.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                Equipment
+                              </a>
+                              <div class="dropdown-menu yyy" id="back" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" id="tex" href="prod_cate.html#D" >Drayer</a>
+                                <a class="dropdown-item" id="tex" href="prod_cate.html#S">Straightner</a>
+                                <a class="dropdown-item" id="tex" href="prod_cate.html#SB">Spray bottle </a>
+                                <a class="dropdown-item" id="tex" href="prod_cate.html#ST">Steamers</a>
+                                <a class="dropdown-item" id="tex" href="prod_cate.html#M">Massager</a>
+                                <a class="dropdown-item" id="tex" href="prod_cate.html#SC">Spa caps</a>
+                              </div>
+                            </li>
+              
+              
+              
+              
+              
+              
+                          <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="comparition.html">Comparition</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="home ramidy .html"> ramidy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <section class="header-section">
+                      <img src="assests/haircare slider4..jpg" style=" -webkit-filter: blur(2px);">
+                    <div class="center-div">
+                      <h1 class="font-weight-bold">Get a Nourishing Hair Spa Done</h1>
+                      <p>We creates our best offers for your beauty hairs</p>
+                      <div class="header-buttons">
+                        <a href="#newsletterdiv">AboutUs</a>
+                        <a href="#contactdiv">ContactUs</a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+
+<body  style="background-color: rgb(53, 11, 53);">
+<style>
+.gallery{
+display: flex;
+margin: 0px;
+}
+.g1 ,.g2{
+display:flex ;
+flex-direction: column;
+
+
+}
+.page-header
+{
+background-color: maroon;
+height: 100px;
+text-align: center;
+}
+
+
+
+</style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+       
+    
+     
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;" ;>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="about us.html"> About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="product.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="contact us.html">Contact us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="Gallery.html"> Gallery </a>
+              </li>
+    
+    
+    
+    
+    
+              
+              
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      -->
+
+
+      <div class="gallery">
+        <div class="g1">
+        <img src="images/4LCKBSNK6M3R2S2HTKNCXKJLEI.jpg" class="img" alt="..." width="530px" height="600px" style="padding: 2px;" >
+        <img src="images/2274-e1641986301391-995x777.jpg" class="img" alt="..." width="530px" height="400px" style="padding: 2px;">
+        <img src="images/SimplisticThirdDouglasfirbarkbeetle-size_restricted.gif" class="img" alt="..." width="530px" height="420px" style="padding: 2px;">
+        <img src="images/5B1BB888-D82F-4F1E-A81F-3E9504510253-e1636555896934.png" class="img" alt="..."width="530px" height="400px" style="padding: 2px;">
+    </div>
+    <div class="g2">
+        <img src="images/sc600x600.jpg" class="img" alt="..." width="530px" height="500px" style="padding: 2px;">
+        <img src="images/styling-feste-ferri-e-acconciature.jpg" class="img" alt="..."width="530px" height="250px" style="padding: 2px;">
+        <img src="images/Cocos-hair-featured.jpg" class="img" alt="..." width="530px" height="680px" style="padding: 2px;">
+        <img src="images/184756913-11b098c7-1de4-4099-b734-0ed61b578738.jpg" class="img" alt="..." width="530px" height="390px" style="padding: 2px;">
+    </div>
+    <div class="g2">
+    
+        <img src="images/5ea342c138bf23128b0ea764.webp" class="img" alt="..."width="475px" height="600px" style="padding: 2px;">
+        <img src="images/istockphoto-1225442967-612x612.jpg" class="img" alt="..." width="475px" height="400px" style="padding: 2px;">
+        <img src="images/image2.jpeg" class="img" alt="..." width="475px" height="420px" style="padding: 2px;">
+        <img src="images/long-blonde-hair-woman-wavy-hairstyle-beauty-face-long-blonde-hair-woman-wavy-hairstyle-beauty-face-beautiful-girl-125023127.jpg" class="img" alt="..." width="475px" height="400px" style="padding: 2px;">
+        </div>
+
+        
+        
+      
+       
+    
+    </div>
+
+
+    <footer class="footersection" id="footerdiv">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div>
+              <h3>ABOUT ANIWEB</h3>
+              <p>Beauty comes from inside, inside the beauty salon....
+                  The time to relax is when you don't have time for it</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div class="footer-navlinks">
+              <h3>NAVIGATION LINKS</h3>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Price</a></li>
+              <li><a href="#">About</a></li>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12 footer-div">
+            <div>
+              <h3>About</h3>
+              <p>For meet up our hair experts and get best service of our salon...</p>
+              <div class="container newsletter-main">
+                <div class="row">
+                  <div class="col-lg-12 col-12 ">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control newsletter-input" placeholder="Your Email">
+                      <div class="input-group-append">
+                        <span class="input-group-text">Subscribe</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <p>Copyright &copy;2020 All rights reserved |MECASIO Hair Experts salon)</p>
+        </div>
+        <div class="scrolltop float-right">
+          <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+        </div>
+      </div>
+    </footer>
+  <!-- 
+    ********************* footer ends ****************************** -->
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $('.count').counterUp({
+      delay:10,
+      time:300
+    })
+    // Get the button:
+    mybutton = document.getElementById("myBtn");
+  
+    //When the user scrolls down 20px from the top of the document, show the buttons
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction(){
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    //When the user clicks on the button, scroll to the top of the document
+    function topFunction(){
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+   
+
+
+
+
